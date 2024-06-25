@@ -1,0 +1,108 @@
+table{
+    width: 100%;
+    text-align: center;
+    
+    border-collapse: collapse; /* Add this line */
+}
+
+
+
+table tr{
+    border-bottom: 1px solid gainsboro;
+}
+table th, table td {
+    border: none;
+    border-collapse: collapse; /* Add this line */
+    padding: 10px;
+  }
+  .up{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+  }
+  #actions{
+
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    align-items: center;
+  }
+  .show, .edit{
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 5px;
+width: 70px;
+border: none;
+cursor: pointer;
+color: white;
+text-align: center;
+  }
+  .show{
+    background: rgb(107,216,252);
+background: linear-gradient(90deg, rgba(107,216,252,1) 0%, rgba(48,236,141,1) 100%);  }
+  .edit{
+    background: rgb(107,170,252);
+background: linear-gradient(90deg, rgba(107,170,252,1) 0%, rgba(48,95,236,1) 100%);
+  }
+  .title{
+    display: flex;
+    gap: 10px;
+    width: max-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+.title a{
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    background: rgb(214,35,254);
+    background: linear-gradient(90deg, rgba(214,35,254,1) 0%, rgba(165,48,242,1) 100%);
+
+}
+  .delete{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    background: rgb(239,94,122);
+    background: linear-gradient(90deg, rgba(239,94,122,1) 0%, rgba(211,83,133,1) 100%);
+  }
+
+
+  @media screen and (max-width:950px){
+
+    td{
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: nowrap;
+      align-items: center;
+      flex-direction: row-reverse;
+      text-align: center;
+      width: 100%;
+      
+    }
+    th{
+      display: none;
+    }
+    
+    tr{
+      width: 100%;
+    }
+    td::before{
+      content:":" attr(data-cell) ;
+      margin-left: 10px;
+      width: 100%;
+      text-align: right;
+      font-weight: 700;
+    }
+    .outter{
+      height: auto !important;
+    }
+
+  }

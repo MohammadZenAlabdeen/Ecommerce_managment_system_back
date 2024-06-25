@@ -1,0 +1,188 @@
+.search-input {
+    width: 200px; /* adjust the width to your liking */
+    height: 30px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    width: 29.30vw;
+    height: 40px;
+    text-align: right;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 10px -3px inset, rgba(0, 0, 0, 0.1) 0px 2px 4px -3px;
+  }
+  .search_container{position: relative;}
+  .search_container svg {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    fill: #666;
+  }
+
+  .nav_custom{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  .card_container{
+    display: flex;
+    justify-content: space-between;
+gap: 20px;
+padding: 30px 0;
+}
+  .card_custom span{
+    width: max-content;
+  }
+  .card_custom{
+    width: 16.48vw;
+    height: clamp(80px,100px,120px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 20px;
+    
+  }
+
+  #card_four{
+    background: rgb(214,35,254);
+background: linear-gradient(90deg, rgba(214,35,254,1) 0%, rgba(165,48,242,1) 100%);
+  }
+  #card_three{
+    background: rgb(239,94,122);
+background: linear-gradient(90deg, rgba(239,94,122,1) 0%, rgba(211,83,133,1) 100%);
+  }
+  #card_two{
+    background: rgb(107,170,252);
+background: linear-gradient(90deg, rgba(107,170,252,1) 0%, rgba(48,95,236,1) 100%);
+  }
+  #card_one{
+    background: rgb(107,216,252);
+background: linear-gradient(90deg, rgba(107,216,252,1) 0%, rgba(48,236,141,1) 100%);
+  }
+  .chart{
+    width: 50%;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .last_deals{
+    width: 45%;
+    margin-top: 20px;
+    padding: 5px 10px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    height: fit-content;
+  }
+  
+  .last_deals table{
+    width: 100%;
+    padding: 5px 10px;
+    text-align: center;
+
+    border-collapse: collapse; /* Add this line */
+
+  }
+
+  .last_deals table tr{
+background-color: #FFFFFF;  
+
+}
+  .last_deals table th, .last_deals table td {
+    border: none;
+    border-collapse: collapse; /* Add this line */
+
+  }
+
+  .info_container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: calc(100vh - 59vh);
+  }
+  .down{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 66vh;
+  }
+  .nav_custom{
+    z-index: 1231237218347128347;
+  }
+  
+
+  @media screen and (max-width:950px){
+
+    .container_custom{
+        height: fit-content !important;
+    }
+    .rest_of_page{
+        width: 100vw !important;
+        height: fit-content !important;
+        border: none !important;
+        border-radius: 0 !important;
+        padding: 20px 15px !important;
+    }
+    .outter{
+      align-items: flex-start !important;
+    }
+    .down{
+      height: fit-content !important;
+    }
+    .nav_custom{
+      flex-wrap: wrap !important;
+      gap: 0 !important;
+      justify-content: space-between;
+    }
+    .nav_custom .nav_deals{
+      display: none;
+    }
+    .nav_custom .search_container input{
+      width: 180px;
+    }
+    .card_container{
+      flex-wrap: wrap !important;
+      flex-grow: 1;
+      justify-content: center;
+      align-items: center;
+    }
+    .card_custom{
+      width: clamp(180px,200px,220px);
+    }
+    .info_container{
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      height: fit-content !important;
+    }
+    .info_container .chart{
+      width: 100%;
+    }
+
+    .info_container .last_deals{
+      display: none;
+    }
+    .username{
+      font-size: 14px;
+    }
+
+    .nav_custom{
+      flex-direction: row;
+    }
+    .iconContain{
+      display: flex;
+      gap: 10px;
+    }
+
+}
